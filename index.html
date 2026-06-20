@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>باستا مينا · مطعم إيطالي للباستا والبيتزا في الرياض، المونسية</title>
+<meta name="description" content="باستا مينا في حي المونسية بالرياض: باستا طازجة وبيتزا فرن إيطالي ومقبّلات وحلويات. أجواء دافئة وتقييم 4.6 على خرائط قوقل. احجز طاولتك أو اطلب الآن." />
+<meta name="theme-color" content="#2a211b" />
+<link rel="icon" href="favicon.svg" type="image/svg+xml" />
+<link rel="canonical" href="https://az212z.github.io/pasta-mina/" />
+
+<!-- Open Graph -->
+<meta property="og:type" content="restaurant" />
+<meta property="og:locale" content="ar_SA" />
+<meta property="og:site_name" content="باستا مينا" />
+<meta property="og:title" content="باستا مينا · مطعم إيطالي للباستا والبيتزا في الرياض" />
+<meta property="og:description" content="باستا طازجة وبيتزا فرن إيطالي في حي المونسية. أجواء دافئة وتقييم 4.6 على خرائط قوقل." />
+<meta property="og:image" content="https://az212z.github.io/pasta-mina/assets/img/pm-4.jpg" />
+<meta property="og:url" content="https://az212z.github.io/pasta-mina/" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="باستا مينا · مطعم إيطالي للباستا والبيتزا" />
+<meta name="twitter:description" content="باستا طازجة وبيتزا فرن في الرياض، حي المونسية." />
+<meta name="twitter:image" content="https://az212z.github.io/pasta-mina/assets/img/pm-4.jpg" />
+
+<!-- fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=El+Messiri:wght@500;600;700&family=Tajawal:wght@400;500;700&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="assets/css/style.css" />
+
+<!-- JSON-LD Restaurant -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Restaurant",
+  "name": "باستا مينا",
+  "alternateName": "Pasta Mina",
+  "servesCuisine": ["Italian", "Pizza", "Pasta"],
+  "image": "https://az212z.github.io/pasta-mina/assets/img/pm-4.jpg",
+  "url": "https://az212z.github.io/pasta-mina/",
+  "telephone": "+966554580943",
+  "priceRange": "$$",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "الرياض",
+    "addressRegion": "المونسية",
+    "addressCountry": "SA"
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "4.6",
+    "reviewCount": "235",
+    "bestRating": "5"
+  },
+  "openingHoursSpecification": [{
+    "@type": "OpeningHoursSpecification",
+    "dayOfWeek": ["Saturday","Sunday","Monday","Tuesday","Wednesday","Thursday","Friday"],
+    "opens": "13:00",
+    "closes": "01:00"
+  }]
+}
+</script>
+</head>
+<body>
+
+<!-- ===================== NAV ===================== -->
+<header class="nav" id="nav">
+  <div class="container nav-inner">
+    <a class="brand" href="#hero" aria-label="باستا مينا، الصفحة الرئيسية">
+      <svg viewBox="0 0 64 64" aria-hidden="true" focusable="false">
+        <rect width="64" height="64" rx="14" fill="#2a211b"/>
+        <circle cx="32" cy="32" r="20" fill="none" stroke="#e7d9bf" stroke-width="2.4" opacity="0.5"/>
+        <g stroke="#e8b84b" stroke-width="2.6" stroke-linecap="round" fill="none">
+          <path d="M24 17 V31"/><path d="M28.5 17 V31"/><path d="M33 17 V31"/><path d="M28.5 31 V47"/>
+        </g>
+        <path d="M22 39 C30 33, 36 45, 30 41" fill="none" stroke="#c0392b" stroke-width="2.4" stroke-linecap="round"/>
+      </svg>
+      <span>باستا مينا<small>Pasta Mina</small></span>
+    </a>
+
+    <nav class="nav-links" aria-label="التنقل الرئيسي">
+      <a href="#dishes">القائمة</a>
+      <a href="#story">قصتنا</a>
+      <a href="#gallery">المعرض</a>
+      <a href="#reserve">الحجز</a>
+      <a href="#location">الموقع</a>
+    </nav>
+
+    <div class="nav-cta">
+      <a class="btn btn-ghost" href="#location">الموقع</a>
+      <a class="btn btn-primary" href="#reserve">احجز طاولة</a>
+      <button class="burger" id="burger" aria-label="فتح القائمة" aria-controls="overlay" aria-expanded="false">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+      </button>
+    </div>
+  </div>
+</header>
+
+<!-- full-screen overlay -->
+<div class="overlay" id="overlay" role="dialog" aria-modal="true" aria-label="قائمة التنقل" aria-hidden="true">
+  <div class="overlay-top">
+    <span class="brand">
+      <svg viewBox="0 0 64 64" aria-hidden="true" width="38" height="38">
+        <rect width="64" height="64" rx="14" fill="#3a2b22"/>
+        <g stroke="#e8b84b" stroke-width="2.6" stroke-linecap="round" fill="none"><path d="M24 17 V31"/><path d="M28.5 17 V31"/><path d="M33 17 V31"/><path d="M28.5 31 V47"/></g>
+        <path d="M22 39 C30 33, 36 45, 30 41" fill="none" stroke="#c0392b" stroke-width="2.4" stroke-linecap="round"/>
+      </svg>
+      <span>باستا مينا<small>Pasta Mina</small></span>
+    </span>
+    <button class="overlay-close" id="overlayClose" aria-label="إغلاق القائمة">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg>
+    </button>
+  </div>
+  <nav class="overlay-nav" aria-label="روابط الصفحة">
+    <a href="#dishes" data-close>القائمة</a>
+    <a href="#story" data-close>قصتنا</a>
+    <a href="#gallery" data-close>المعرض</a>
+    <a href="#reserve" data-close>الحجز والطلب</a>
+    <a href="#location" data-close>الموقع والأوقات</a>
+    <a href="#hero" data-close>الرئيسية</a>
+  </nav>
+  <div class="overlay-foot">
+    <a href="https://wa.me/966554580943" target="_blank" rel="noopener">واتساب</a>
+    <a href="tel:0554580943">اتصال 0554580943</a>
+    <a href="https://www.google.com/maps/search/?api=1&query=%D8%A8%D8%A7%D8%B3%D8%AA%D8%A7%20%D9%85%D9%8A%D9%86%D8%A7%20%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6" target="_blank" rel="noopener">الخريطة</a>
+  </div>
+</div>
+
+<main id="main">
+
+<!-- ===================== HERO ===================== -->
+<section class="hero" id="hero">
+  <div class="container hero-grid">
+    <div class="hero-copy">
+      <span class="eyebrow">مطعم إيطالي · الرياض · المونسية</span>
+      <h1>باستا <span class="accent">طازجة</span><br>وبيتزا <em>فرن</em> على أصولها</h1>
+      <p class="hero-lead">عجين يُحضّر يوميًا، صلصات إيطالية حقيقية، وفرن يمنح البيتزا قشرتها الذهبية. تجربة دافئة في قلب المونسية تجمع نكهة إيطاليا وكرم الضيافة.</p>
+      <div class="hero-cta">
+        <a class="btn btn-primary" href="#reserve">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 2v4M16 2v4M3 10h18M5 6h14a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2z"/></svg>
+          احجز طاولة
+        </a>
+        <a class="btn btn-ghost" href="#dishes">استعرض القائمة</a>
+      </div>
+      <div class="hero-rating">
+        <span class="stars" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3 6.3 6.9 1-5 4.8 1.2 6.9L12 17.8 5.9 21l1.2-6.9-5-4.8 6.9-1z"/></svg>
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3 6.3 6.9 1-5 4.8 1.2 6.9L12 17.8 5.9 21l1.2-6.9-5-4.8 6.9-1z"/></svg>
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3 6.3 6.9 1-5 4.8 1.2 6.9L12 17.8 5.9 21l1.2-6.9-5-4.8 6.9-1z"/></svg>
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3 6.3 6.9 1-5 4.8 1.2 6.9L12 17.8 5.9 21l1.2-6.9-5-4.8 6.9-1z"/></svg>
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3 6.3 6.9 1-5 4.8 1.2 6.9L12 17.8 5.9 21l1.2-6.9-5-4.8 6.9-1z"/></svg>
+        </span>
+        <span>تقييم 4.6 على خرائط قوقل · 235 تقييمًا</span>
+      </div>
+    </div>
+
+    <!-- signature motion stage -->
+    <div class="stage" aria-hidden="false">
+      <div class="stage-photo">
+        <img src="assets/img/pm-4.jpg" width="520" height="520" alt="بيتزا فرن إيطالي بقشرة ذهبية على حامل ذهبي داخل مطعم باستا مينا" fetchpriority="high" decoding="async" />
+      </div>
+
+      <!-- drifting basil + cherry tomato -->
+      <span class="drift" style="inset-inline-start:14%; inset-block-start:6%;" aria-hidden="true">
+        <svg width="34" height="34" viewBox="0 0 32 32"><path d="M16 3C9 6 5 13 6 24c10 2 18-4 21-15-7 1-11 6-11 6 0-5 3-9 0-12z" fill="#4f6043"/><path d="M16 8c-3 4-6 9-7 14" stroke="#3c4a33" stroke-width="1.3" fill="none"/></svg>
+      </span>
+      <span class="drift" style="inset-inline-end:12%; inset-block-start:4%;" aria-hidden="true">
+        <svg width="26" height="26" viewBox="0 0 28 28"><circle cx="14" cy="16" r="9" fill="#c0392b"/><path d="M14 7c0-2 1-3 3-4-1 2 0 3 1 4-2 0-3 0-4 0z" fill="#4f6043"/></svg>
+      </span>
+      <span class="drift" style="inset-inline-start:60%; inset-block-start:8%;" aria-hidden="true">
+        <svg width="30" height="30" viewBox="0 0 32 32"><path d="M16 3C9 6 5 13 6 24c10 2 18-4 21-15-7 1-11 6-11 6 0-5 3-9 0-12z" fill="#5a6c4d"/></svg>
+      </span>
+
+      <!-- TWIRL SVG: fork + winding strands + steam + garnish -->
+      <svg class="twirl-svg" id="twirl" viewBox="0 0 200 200" aria-hidden="true" focusable="false">
+        <!-- steam swirls -->
+        <path class="steam" stroke-width="3" d="M84 70 C76 58, 96 50, 88 38 C82 30, 98 24, 92 14" />
+        <path class="steam" stroke-width="2.4" d="M108 72 C102 62, 118 54, 110 44 C104 36, 120 30, 114 20" />
+        <path class="steam" stroke-width="2" d="M124 76 C120 68, 132 62, 126 54" />
+
+        <!-- plate hint ring -->
+        <circle cx="100" cy="150" r="42" fill="none" stroke="rgba(255,255,255,.25)" stroke-width="2"/>
+
+        <!-- winding spaghetti strands (drawn onto fork via dashoffset) -->
+        <path class="strand" stroke="#e8c252" stroke-width="4.2" d="M70 150 C60 132, 92 126, 100 116 C108 108, 96 96, 100 92" />
+        <path class="strand" stroke="#dcae3d" stroke-width="4.2" d="M130 150 C140 132, 110 124, 100 114 C92 106, 104 96, 100 90" />
+        <path class="strand" stroke="#f0d06a" stroke-width="3.6" d="M84 156 C74 142, 100 132, 100 118 C100 110, 100 100, 100 94" />
+
+        <!-- garnish on plate -->
+        <g class="garnish"><circle cx="78" cy="158" r="6.5" fill="#c0392b"/><path d="M78 151c0-2 1-3 3-4-1 2 0 3 1 4-2 0-3 0-4 0z" fill="#4f6043"/></g>
+        <g class="garnish"><path d="M124 156c-3 2-5 5-5 9 5 1 9-2 11-7-4 0-6 3-6 3 0-2 1-4 0-5z" fill="#4f6043"/></g>
+
+        <!-- the FORK (rotates / twirls) -->
+        <g class="fork-group">
+          <g stroke="#3a2b22" stroke-width="5" stroke-linecap="round" fill="none">
+            <path d="M84 36 V92"/>
+            <path d="M94 36 V92"/>
+            <path d="M106 36 V92"/>
+            <path d="M116 36 V92"/>
+          </g>
+          <path d="M100 92 V164" stroke="#3a2b22" stroke-width="8" stroke-linecap="round" fill="none"/>
+          <path d="M100 92 V164" stroke="#5c4636" stroke-width="3" stroke-linecap="round" fill="none"/>
+        </g>
+      </svg>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== TRUST BAR ===================== -->
+<section class="trust" style="padding-block: clamp(2rem,5vw,3rem);">
+  <div class="container">
+    <div class="item reveal">
+      <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l3 6.3 6.9 1-5 4.8 1.2 6.9L12 17.8 5.9 21l1.2-6.9-5-4.8 6.9-1z"/></svg>
+      <strong>4.6</strong><span>تقييم خرائط قوقل · 235 مراجعة</span>
+    </div>
+    <div class="item reveal d1">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M3 11l9-8 9 8M5 10v10h14V10"/></svg>
+      <strong>فرن إيطالي</strong><span>بيتزا بقشرة فحمية أصيلة</span>
+    </div>
+    <div class="item reveal d2">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M4 19V8a4 4 0 0 1 4-4h2v15M14 19V9M18 19v-6"/></svg>
+      <strong>عجين يومي</strong><span>باستا طازجة تُحضّر كل صباح</span>
+    </div>
+    <div class="item reveal d3">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M3 21h18M5 21V8l7-5 7 5v13M9 21v-6h6v6"/></svg>
+      <strong>أجواء دافئة</strong><span>جلسات عائلية مريحة</span>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== DISHES ===================== -->
+<section id="dishes">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow">من القائمة</span>
+      <h2>أطباق مختارة من مطبخ مينا</h2>
+      <p>نكهات إيطالية صادقة بمكوّنات طازجة. الأسعار حسب القائمة داخل المطعم وعند الطلب.</p>
+    </div>
+
+    <div class="dishes-grid">
+      <article class="dish reveal">
+        <div class="dish-img"><img src="assets/img/pm-5.jpg" width="600" height="450" loading="lazy" decoding="async" alt="بيتزا فرن كبيرة بطبقة جبن ذائبة وخضار مشوي في باستا مينا" /></div>
+        <div class="dish-body">
+          <span class="dish-tag">بيتزا الفرن</span>
+          <h3>بيتزا الفرن الإيطالي</h3>
+          <p>عجينة مخمّرة على مهل بقشرة فحمية، جبن طازج وصلصة طماطم بيتية.</p>
+          <span class="dish-price"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg> السعر حسب القائمة</span>
+        </div>
+      </article>
+
+      <article class="dish reveal d1">
+        <div class="dish-img"><img src="assets/img/pm-8.jpg" width="600" height="450" loading="lazy" decoding="async" alt="بيتزا بيستو بالريحان والجبن من مطعم باستا مينا" /></div>
+        <div class="dish-body">
+          <span class="dish-tag">بيتزا وريحان</span>
+          <h3>بيتزا البيستو</h3>
+          <p>صلصة بيستو الريحان الطازج مع جبن مطبوخ في الفرن حتى الذهبية.</p>
+          <span class="dish-price"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg> السعر حسب القائمة</span>
+        </div>
+      </article>
+
+      <article class="dish reveal d2">
+        <div class="dish-img"><img src="assets/img/pm-9.jpg" width="600" height="450" loading="lazy" decoding="async" alt="بيتزا الفطر بالجبن الأبيض على طبق داكن في باستا مينا" /></div>
+        <div class="dish-body">
+          <span class="dish-tag">نكهة الفطر</span>
+          <h3>بيتزا الفطر والجبن</h3>
+          <p>فطر طازج وجبن أبيض كريمي فوق عجينة الفرن الإيطالي.</p>
+          <span class="dish-price"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg> السعر حسب القائمة</span>
+        </div>
+      </article>
+
+      <article class="dish reveal">
+        <div class="dish-img"><img src="assets/img/pm-3.jpg" width="600" height="450" loading="lazy" decoding="async" alt="بيتزا مشوية مع صلصة جانبية وطماطم كرزية في باستا مينا" /></div>
+        <div class="dish-body">
+          <span class="dish-tag">مقبّلات إيطالية</span>
+          <h3>بداية إيطالية</h3>
+          <p>مقبّلات وصلصات تُقدّم لتفتح الشهية قبل الطبق الرئيسي.</p>
+          <span class="dish-price"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg> السعر حسب القائمة</span>
+        </div>
+      </article>
+
+      <article class="dish reveal d1">
+        <div class="dish-img"><img src="assets/img/pm-6.jpg" width="600" height="450" loading="lazy" decoding="async" alt="تشكيلة بيتزا متنوعة معروضة على طاولة في باستا مينا" /></div>
+        <div class="dish-body">
+          <span class="dish-tag">تشكيلة</span>
+          <h3>تشكيلة البيتزا</h3>
+          <p>أنواع متعددة بين الكلاسيكية والخاصة، اختَر ما يناسب الطاولة.</p>
+          <span class="dish-price"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg> السعر حسب القائمة</span>
+        </div>
+      </article>
+
+      <article class="dish reveal d2">
+        <div class="dish-img"><img src="assets/img/pm-4.jpg" width="600" height="450" loading="lazy" decoding="async" alt="بيتزا بقشرة ذهبية على حامل ذهبي بجانب سلطة طازجة في باستا مينا" /></div>
+        <div class="dish-body">
+          <span class="dish-tag">سلطات وحلويات</span>
+          <h3>سلطات وحلويات</h3>
+          <p>سلطات خضراء منعشة وحلويات إيطالية تختم بها وجبتك.</p>
+          <span class="dish-price"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg> السعر حسب القائمة</span>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== STORY ===================== -->
+<section class="story" id="story">
+  <div class="container story-grid">
+    <div class="story-media reveal">
+      <img src="assets/img/pm-1.jpg" width="500" height="666" loading="lazy" decoding="async" alt="ركن جلوس دافئ مع إضاءة وأرائك خضراء ونباتات في باستا مينا" />
+      <img src="assets/img/pm-7.jpg" width="500" height="666" loading="lazy" decoding="async" alt="قاعة الطعام بكراسي خشبية وجدران من الطوب في باستا مينا" />
+    </div>
+    <div class="story-copy reveal d1">
+      <span class="eyebrow">قصتنا</span>
+      <h2>طاولة إيطالية في حي المونسية</h2>
+      <p>وُلدت باستا مينا من شغف بسيط: أن تجد طبق باستا صادق النكهة وبيتزا فرن حقيقية قريبة منك. نختار مكوّناتنا بعناية، ونحضّر العجين يوميًا، ونقدّمه في أجواء دافئة تشبه موائد العائلة الإيطالية.</p>
+      <ul class="feature-list">
+        <li>
+          <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M4 19V8a4 4 0 0 1 4-4h2v15M14 19V9M18 19v-6"/></svg></span>
+          <span><strong>طزاجة يومية</strong><span>عجين وصلصات تُحضّر في مطبخنا كل يوم.</span></span>
+        </li>
+        <li>
+          <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M3 11l9-8 9 8M5 10v10h14V10"/></svg></span>
+          <span><strong>فرن على الأصول</strong><span>قشرة بيتزا فحمية بنكهة إيطالية مميّزة.</span></span>
+        </li>
+        <li>
+          <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M12 21s-7-4.5-7-10a7 7 0 0 1 14 0c0 5.5-7 10-7 10z"/><circle cx="12" cy="11" r="2.5"/></svg></span>
+          <span><strong>قريبون منك</strong><span>في قلب المونسية بالرياض، يسهل الوصول إلينا.</span></span>
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== GALLERY ===================== -->
+<section id="gallery">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow">المعرض</span>
+      <h2>لمحات من باستا مينا</h2>
+      <p>اضغط أي صورة لعرضها بحجم أكبر.</p>
+    </div>
+    <div class="gallery-grid">
+      <figure class="wide reveal" data-lightbox><img src="assets/img/pm-4.jpg" width="700" height="450" loading="lazy" decoding="async" alt="بيتزا ذهبية على حامل ذهبي بجدار من الطوب في باستا مينا" /></figure>
+      <figure class="tall reveal d1" data-lightbox><img src="assets/img/pm-1.jpg" width="500" height="700" loading="lazy" decoding="async" alt="ركن جلوس بإضاءة دافئة ونباتات خضراء في باستا مينا" /></figure>
+      <figure class="reveal d2" data-lightbox><img src="assets/img/pm-8.jpg" width="400" height="300" loading="lazy" decoding="async" alt="بيتزا البيستو بالريحان من باستا مينا" /></figure>
+      <figure class="reveal" data-lightbox><img src="assets/img/pm-9.jpg" width="400" height="300" loading="lazy" decoding="async" alt="بيتزا الفطر بالجبن الأبيض من باستا مينا" /></figure>
+      <figure class="reveal d1" data-lightbox><img src="assets/img/pm-3.jpg" width="400" height="300" loading="lazy" decoding="async" alt="بيتزا مع مقبّلات وطماطم كرزية في باستا مينا" /></figure>
+      <figure class="wide reveal d2" data-lightbox><img src="assets/img/pm-7.jpg" width="700" height="450" loading="lazy" decoding="async" alt="قاعة طعام بكراسي خشبية وجدران من الطوب في باستا مينا" /></figure>
+      <figure class="reveal" data-lightbox><img src="assets/img/pm-6.jpg" width="400" height="300" loading="lazy" decoding="async" alt="تشكيلة بيتزا متنوعة على الطاولة في باستا مينا" /></figure>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== RESERVE ===================== -->
+<section class="reserve" id="reserve">
+  <div class="container reserve-grid">
+    <div class="reserve-aside reveal">
+      <span class="eyebrow">الحجز والطلب</span>
+      <h2>احجز طاولتك أو اطلب الآن</h2>
+      <p>عبّئ النموذج وسنجهّز رسالتك على واتساب مباشرة لتأكيد الحجز أو الطلب. سريع وبسيط.</p>
+      <ul class="hours">
+        <li><span>السبت إلى الخميس</span><strong>١:٠٠ ظهرًا حتى ١:٠٠ ليلًا</strong></li>
+        <li><span>الجمعة</span><strong>١:٠٠ ظهرًا حتى ١:٠٠ ليلًا</strong></li>
+        <li><span>الجوال</span><strong dir="ltr">0554580943</strong></li>
+      </ul>
+    </div>
+
+    <div class="reserve-main reveal d1">
+      <form class="form-card" id="reserveForm" novalidate>
+        <div class="field-row">
+          <div class="field">
+            <label for="kind">نوع الطلب</label>
+            <select id="kind" name="kind">
+              <option value="حجز طاولة">حجز طاولة</option>
+              <option value="طلب">طلب (استلام)</option>
+              <option value="استفسار">استفسار</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="guests">عدد الضيوف</label>
+            <input id="guests" name="guests" type="number" min="1" inputmode="numeric" placeholder="مثال: 4" />
+          </div>
+        </div>
+        <div class="field-row">
+          <div class="field">
+            <label for="name">الاسم <span aria-hidden="true">*</span></label>
+            <input id="name" name="name" type="text" autocomplete="name" required placeholder="اسمك الكريم" />
+          </div>
+          <div class="field">
+            <label for="phone">الجوال <span aria-hidden="true">*</span></label>
+            <input id="phone" name="phone" type="tel" autocomplete="tel" required inputmode="tel" dir="ltr" placeholder="05XXXXXXXX" />
+          </div>
+        </div>
+        <div class="field-row">
+          <div class="field">
+            <label for="date">التاريخ</label>
+            <input id="date" name="date" type="date" />
+          </div>
+          <div class="field">
+            <label for="time">الوقت</label>
+            <input id="time" name="time" type="time" />
+          </div>
+        </div>
+        <div class="field">
+          <label for="notes">ملاحظات</label>
+          <textarea id="notes" name="notes" placeholder="طاولة بالداخل، مناسبة خاصة، إضافات على الطلب..."></textarea>
+        </div>
+        <button class="btn btn-primary" type="submit" style="width:100%; justify-content:center;">
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M.057 24l1.687-6.163a11.867 11.867 0 0 1-1.587-5.946C.16 5.335 5.495 0 12.05 0a11.82 11.82 0 0 1 8.413 3.488 11.82 11.82 0 0 1 3.48 8.414c-.003 6.557-5.338 11.892-11.893 11.892a11.9 11.9 0 0 1-5.688-1.448L.057 24zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884a9.86 9.86 0 0 0 1.51 5.26l-.999 3.648 3.978-1.755z"/></svg>
+          إرسال عبر واتساب
+        </button>
+        <p class="form-note">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4M12 8h.01"/></svg>
+          نموذج تجريبي، يحفظ بياناتك محليًا في جهازك ويجهّز رسالة واتساب للتأكيد، دون نظام حجز آلي.
+        </p>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== LOCATION ===================== -->
+<section id="location">
+  <div class="container location-grid">
+    <div class="reveal">
+      <span class="eyebrow">الموقع والأوقات</span>
+      <h2>تجدنا في المونسية</h2>
+      <ul class="info-list">
+        <li>
+          <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M12 21s-7-4.5-7-10a7 7 0 0 1 14 0c0 5.5-7 10-7 10z"/><circle cx="12" cy="11" r="2.5"/></svg></span>
+          <span><strong>العنوان</strong><span>حي المونسية، الرياض، المملكة العربية السعودية</span></span>
+        </li>
+        <li>
+          <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M5 4h4l2 5-3 2a12 12 0 0 0 5 5l2-3 5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2z"/></svg></span>
+          <span><strong>الجوال</strong><span dir="ltr">0554580943</span></span>
+        </li>
+        <li>
+          <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></span>
+          <span><strong>أوقات العمل</strong><span>يوميًا من ١:٠٠ ظهرًا حتى ١:٠٠ بعد منتصف الليل</span></span>
+        </li>
+      </ul>
+      <div class="hero-cta">
+        <a class="btn btn-gold" href="https://www.google.com/maps/search/?api=1&query=%D8%A8%D8%A7%D8%B3%D8%AA%D8%A7%20%D9%85%D9%8A%D9%86%D8%A7%20%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 21s-7-4.5-7-10a7 7 0 0 1 14 0c0 5.5-7 10-7 10z"/><circle cx="12" cy="11" r="2.5"/></svg>
+          افتح في خرائط قوقل
+        </a>
+        <a class="btn btn-ghost" href="tel:0554580943">اتصل بنا</a>
+      </div>
+    </div>
+    <a class="map-card reveal d1" href="https://www.google.com/maps/search/?api=1&query=%D8%A8%D8%A7%D8%B3%D8%AA%D8%A7%20%D9%85%D9%8A%D9%86%D8%A7%20%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6" target="_blank" rel="noopener" aria-label="افتح موقع باستا مينا في خرائط قوقل">
+      <img src="assets/img/pm-7.jpg" width="600" height="450" loading="lazy" decoding="async" alt="واجهة قاعة الطعام في باستا مينا بحي المونسية" />
+    </a>
+  </div>
+</section>
+
+<!-- ===================== FINAL CTA ===================== -->
+<section class="finalcta">
+  <div class="container">
+    <h2 class="reveal">جوعان لباستا إيطالية صادقة؟</h2>
+    <p class="reveal d1">احجز طاولتك أو اطلب الآن، وخلّ مينا يجهّز لك طبقًا يستحق.</p>
+    <div class="hero-cta reveal d2">
+      <a class="btn btn-ghost" href="#reserve">احجز طاولة</a>
+      <a class="btn btn-gold" href="https://wa.me/966554580943" target="_blank" rel="noopener">اطلب عبر واتساب</a>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- ===================== FOOTER ===================== -->
+<footer class="footer">
+  <div class="container footer-grid">
+    <div>
+      <span class="brand">
+        <svg viewBox="0 0 64 64" aria-hidden="true" width="38" height="38">
+          <rect width="64" height="64" rx="14" fill="#3a2b22"/>
+          <g stroke="#e8b84b" stroke-width="2.6" stroke-linecap="round" fill="none"><path d="M24 17 V31"/><path d="M28.5 17 V31"/><path d="M33 17 V31"/><path d="M28.5 31 V47"/></g>
+          <path d="M22 39 C30 33, 36 45, 30 41" fill="none" stroke="#c0392b" stroke-width="2.4" stroke-linecap="round"/>
+        </svg>
+        <span>باستا مينا<small style="color:#d8b364">Pasta Mina</small></span>
+      </span>
+      <p style="color:#bdae96; max-width:34ch;">مطعم إيطالي للباستا والبيتزا في حي المونسية بالرياض. نكهة صادقة وأجواء دافئة.</p>
+    </div>
+    <div>
+      <h4>روابط</h4>
+      <ul>
+        <li><a href="#dishes">القائمة</a></li>
+        <li><a href="#story">قصتنا</a></li>
+        <li><a href="#gallery">المعرض</a></li>
+        <li><a href="#reserve">الحجز والطلب</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>تواصل</h4>
+      <ul>
+        <li><a href="https://wa.me/966554580943" target="_blank" rel="noopener">واتساب</a></li>
+        <li><a href="tel:0554580943" dir="ltr">0554580943</a></li>
+        <li><a href="https://www.google.com/maps/search/?api=1&query=%D8%A8%D8%A7%D8%B3%D8%AA%D8%A7%20%D9%85%D9%8A%D9%86%D8%A7%20%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6" target="_blank" rel="noopener">الموقع على الخريطة</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="container footer-bottom">
+    <span>© <span id="year">2026</span> باستا مينا · جميع الحقوق محفوظة.</span>
+    <span>الرياض · المونسية</span>
+  </div>
+</footer>
+
+<!-- floating FABs -->
+<div class="fabs">
+  <a class="fab fab-wa" href="https://wa.me/966554580943" target="_blank" rel="noopener" aria-label="تواصل عبر واتساب">
+    <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M.057 24l1.687-6.163a11.867 11.867 0 0 1-1.587-5.946C.16 5.335 5.495 0 12.05 0a11.82 11.82 0 0 1 8.413 3.488 11.82 11.82 0 0 1 3.48 8.414c-.003 6.557-5.338 11.892-11.893 11.892a11.9 11.9 0 0 1-5.688-1.448L.057 24zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884a9.86 9.86 0 0 0 1.51 5.26l-.999 3.648 3.978-1.755z"/></svg>
+  </a>
+  <a class="fab fab-call" href="tel:0554580943" aria-label="اتصال هاتفي">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 4h4l2 5-3 2a12 12 0 0 0 5 5l2-3 5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2z"/></svg>
+  </a>
+  <a class="fab fab-map" href="https://www.google.com/maps/search/?api=1&query=%D8%A8%D8%A7%D8%B3%D8%AA%D8%A7%20%D9%85%D9%8A%D9%86%D8%A7%20%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6" target="_blank" rel="noopener" aria-label="الموقع على خرائط قوقل">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 21s-7-4.5-7-10a7 7 0 0 1 14 0c0 5.5-7 10-7 10z"/><circle cx="12" cy="11" r="2.5"/></svg>
+  </a>
+</div>
+
+<!-- lightbox -->
+<div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="عرض الصورة" aria-hidden="true">
+  <button data-close aria-label="إغلاق الصورة"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg></button>
+  <img src="assets/img/pm-4.jpg" alt="صورة من معرض باستا مينا" />
+</div>
+
+<!-- toast -->
+<div class="toast" id="toast" role="status" aria-live="polite">
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg>
+  <span>تم</span>
+</div>
+
+<script src="assets/js/main.js" defer></script>
+</body>
+</html>
